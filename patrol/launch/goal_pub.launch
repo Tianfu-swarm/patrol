@@ -1,0 +1,14 @@
+<launch>
+    
+    <!-- 启动 RViz 节点 -->
+    <arg name="rviz" default="true" />
+    <group if="$(arg rviz)">
+        <node launch-prefix="nice" pkg="rviz" type="rviz" name="rviz"  args="-d $(find patrol)/launch/patrol.rviz" />
+    </group>
+    
+    <rosparam command="load" file="$(find patrol)/config/patrol.yaml" />
+    <!-- 启动节点 -->
+    <node name="patrol" pkg="patrol" type="Markov_transfer_matrix" output="screen">
+     
+    </node>
+</launch>

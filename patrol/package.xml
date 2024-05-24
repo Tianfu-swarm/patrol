@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>patrol</name>
+  <version>0.0.1</version>
+  <description>The package description</description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <!-- 声明依赖项 -->
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>  <!-- 添加message_generation -->
+  <build_depend>CGAL</build_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>  <!-- 添加message_runtime -->
+  <exec_depend>CGAL</exec_depend>  <!-- 添加message_runtime -->
+ 
+
+  <!-- 声明发布的消息 -->
+  <export>
+    <build_depend>roscpp</build_depend>
+    <build_depend>std_msgs</build_depend>
+    <build_depend>message_generation</build_depend>
+    <build_depend>CGAL</build_depend>
+    <exec_depend>roscpp</exec_depend>
+    <exec_depend>std_msgs</exec_depend>
+    <exec_depend>message_runtime</exec_depend>
+    <exec_depend>CGAL</exec_depend>
+  </export>
+</package>

@@ -1,0 +1,8 @@
+common:
+    patrol_goal_topic: "/patrol_goal"
+    Adjacency_matrix_topic: "/Adjacency_matrix"
+    Odometry_topic: "/Odometry"
+    numOfIteration: 30
+    patrolPointsDensity: 5
+parameters:
+  distance_threshold: 0.1
